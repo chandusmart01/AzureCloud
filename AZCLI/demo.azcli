@@ -1,0 +1,38 @@
+az login
+az logout
+az login --user-name chandrasekhar@devopsbychandu3.onmicrosoft.com
+az account show
+
+
+az group create --name dev --location centralus
+
+az group delete --name dev --yes
+
+az group show --name test network
+
+az group list
+
+az storage account create --name devabcddevops23 --resource-group test --location eastus --access-tier hot
+
+az storage account create \
+    --name devabcddevops24 \
+    --resource-group test \
+    --location eastus \
+    --access-tier hot \
+    --sku Standard_GRS
+
+az storage account delete \
+    --name devabcddevops23 \
+    --resource-group test \
+    --yes
+
+
+az group update --name dev --location centralus --tags "owner=chandu"
+
+
+az vm create \
+   --name devmv \
+   --resource-group test \
+   --admin-username devops \
+   --admin-password Password@123 \
+   --image UbuntuLTS

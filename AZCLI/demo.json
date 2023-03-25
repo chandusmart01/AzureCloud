@@ -1,0 +1,14 @@
+{
+  "Name": "chandurole",
+  "IsCustom": true,
+  "Description": "View everything in the subscription and also open support tickets.",
+  "Actions": [
+    "Microsoft.Web/serverfarms/write"
+  ],
+  "NotActions": [],
+  "DataActions": [],
+  "NotDataActions": [],
+  "AssignableScopes": [
+    "/subscriptions/a7ee7b4a-8947-41aa-b828-6cc170624574/resourceGroups/web"
+  ]
+}
